@@ -33,7 +33,7 @@ npm install -g gatsby-cli
 run gatsby locally
 ```java
 gatsby develop
-```java
+```
 
 Output
 ```java
@@ -70,7 +70,7 @@ https://github.com/browserslist/browserslist#browsers-data-updating
 You can now view client in the browser.
 ⠀
   http://localhost:8000/
-
+```
 ⠀
 ![image](https://user-images.githubusercontent.com/3156358/140828616-ad6f9848-93a8-435a-bc70-0b37baa2fd78.png)
 
