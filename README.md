@@ -6,6 +6,87 @@ We start with setting up a basic form for uploading a file and other text inform
 
 I used `React` for this tutorial but the same result can be easily made with any other framework or with plain JavaScript.
 
+## Quick Start
+
+clone the repo
+
+
+
+
+Start the front end
+```java
+cd Client
+
+# install gatsby if needed
+apt update -y && apt upgrade -y
+
+# become root if needed
+sudo apt update -y && sudo apt upgrade -y
+
+# verify versions
+node -v && npm -v
+
+# install gatsby
+npm install -g gatsby-cli
+```
+
+run gatsby locally
+```java
+gatsby develop
+```java
+
+Output
+```java
+success open and validate gatsby-configs - 0.060s
+success load plugins - 0.050s
+success onPreInit - 0.033s
+success initialize cache - 0.008s
+success copy gatsby files - 0.061s
+success onPreBootstrap - 0.025s
+success createSchemaCustomization - 0.005s
+success Checking for changed pages - 0.007s
+success source and transform nodes - 0.062s
+success building schema - 0.249s
+info Total nodes: 18, SitePage nodes: 1 (use --verbose for breakdown)
+success createPages - 0.014s
+success Checking for changed pages - 0.001s
+success createPagesStatefully - 0.054s
+success update schema - 0.032s
+success write out redirect data - 0.009s
+success onPostBootstrap - 0.002s
+info bootstrap finished - 3.654s
+success onPreExtractQueries - 0.002s
+success extract queries from components - 0.130s
+success write out requires - 0.010s
+success run page queries - 0.032s - 1/1 30.84/s
+warn Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+⠀
+You can now view client in the browser.
+⠀
+  http://localhost:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  http://localhost:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+success Building development bundle - 12.300s
+```
+![image](https://user-images.githubusercontent.com/3156358/140828616-ad6f9848-93a8-435a-bc70-0b37baa2fd78.png)
+
+
+Set up the back end
+```java
+cd server
+
+
+
 ## Creating a basic React project
 
 In order to start we need a working React project. Simply run this command in your terminal to set up a basic React project.
