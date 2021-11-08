@@ -64,11 +64,18 @@ npx browserslist@latest --update-db
 
 Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
-⠀
+```
+
+```java
 You can now view client in the browser.
 ⠀
   http://localhost:8000/
+
 ⠀
+![image](https://user-images.githubusercontent.com/3156358/140828616-ad6f9848-93a8-435a-bc70-0b37baa2fd78.png)
+
+
+```java
 View GraphiQL, an in-browser IDE, to explore your site's data and schema
 ⠀
   http://localhost:8000/___graphql
@@ -78,8 +85,8 @@ To create a production build, use gatsby build
 ⠀
 success Building development bundle - 12.300s
 ```
-![image](https://user-images.githubusercontent.com/3156358/140828616-ad6f9848-93a8-435a-bc70-0b37baa2fd78.png)
 
+![image](https://user-images.githubusercontent.com/3156358/140828941-7338c354-d79d-4fcb-81a5-596049b864ba.png)
 
 Set up the back end
 ```java
