@@ -19,6 +19,10 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage });
 
+Object.getOwnPropertyNames(mongoose).forEach(prop => {
+  console.log(prop);
+});
+
 // * Mongo setup
 mongoose
   .connect('mongodb://localhost:27017/multer-test', {

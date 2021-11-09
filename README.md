@@ -1,4 +1,8 @@
+# multer-testing: upload files using react, mongodb, mongoose, express, multer and node 
+
 # multer-testing
+
+https://github.com/mstanciu552/multer-testing
 
 This is a guide on how to use the `multer` library with `express`.
 
@@ -88,11 +92,87 @@ success Building development bundle - 12.300s
 
 ![image](https://user-images.githubusercontent.com/3156358/140828941-7338c354-d79d-4fcb-81a5-596049b864ba.png)
 
+## Set up the back end
+
 Set up the back end
 ```java
 cd server
 
+npm run dev --trace-warnings
+```
 
+Output
+```java
+> server@1.0.0 dev
+> nodemon index.js
+
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+(node:556582) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (net.js:1331:16)
+    at listenInCluster (net.js:1379:12)
+    at Server.listen (net.js:1465:7)
+    at Function.listen (/mnt/ap/ap/multer-testing/server/node_modules/express/lib/application.js:618:24)
+    at file:///mnt/ap/ap/multer-testing/server/index.js:60:5
+    at ModuleJob.run (internal/modules/esm/module_job.js:183:25)
+    at async Loader.import (internal/modules/esm/loader.js:178:24)
+    at async Object.loadESM (internal/process/esm_loader.js:68:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1358:8)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3030
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+connections
+models
+modelSchemas
+options
+_pluralize
+Schema
+model
+plugins
+(node:556816) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+events.js:377
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (net.js:1331:16)
+    at listenInCluster (net.js:1379:12)
+    at Server.listen (net.js:1465:7)
+    at Function.listen (/mnt/ap/ap/multer-testing/server/node_modules/express/lib/application.js:618:24)
+    at file:///mnt/ap/ap/multer-testing/server/index.js:64:5
+    at ModuleJob.run (internal/modules/esm/module_job.js:183:25)
+    at async Loader.import (internal/modules/esm/loader.js:178:24)
+    at async Object.loadESM (internal/process/esm_loader.js:68:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (net.js:1358:8)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3030
+}
+[nodemon] app crashed - waiting for file changes before starting...
+
+```
 
 ## Creating a basic React project
 
